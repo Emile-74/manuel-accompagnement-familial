@@ -27,3 +27,4 @@ Cette web-app a été développée pour gamifier le "Manuel d'Accompagnement Fam
 ## Déploiement
 
 Le projet est configuré pour un déploiement facile sur Vercel. Importez simplement le projet sur Vercel et il sera déployé automatiquement.
+"# Force red�ploiement" 
