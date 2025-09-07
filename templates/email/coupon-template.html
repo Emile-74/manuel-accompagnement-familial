@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Félicitations ! Votre code promo -30%</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: #2c5aa0;
+            margin-bottom: 10px;
+        }
+        .coupon-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .coupon-code {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin: 10px 0;
+            padding: 10px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 5px;
+        }
+        .highlight {
+            background-color: #e8f4f8;
+            padding: 15px;
+            border-left: 4px solid #2c5aa0;
+            margin: 20px 0;
+        }
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎉 Félicitations !</h1>
+            <p>Vous avez terminé avec succès votre parcours d'apprentissage</p>
+        </div>
+
+        <p>Cher(e) {{displayName}},</p>
+
+        <p>Bravo ! Vous avez atteint le niveau 12 et complété les 17 leçons du Manuel d'Accompagnement Familiale. Votre engagement et votre persévérance sont remarquables.</p>
+
+        <div class="coupon-box">
+            <h2>Votre récompense exclusive</h2>
+            <p>Code promo -30% sur le manuel complet</p>
+            <div class="coupon-code">{{couponCode}}</div>
+            <p><small>Valable jusqu'au {{expirationDate}}</small></p>
+        </div>
+
+        <div class="highlight">
+            <h3>💡 Comment utiliser votre code :</h3>
+            <ol>
+                <li>Rendez-vous sur notre boutique en ligne</li>
+                <li>Ajoutez le Manuel d'Accompagnement Familiale complet à votre panier</li>
+                <li>Saisissez le code <strong>{{couponCode}}</strong> lors du paiement</li>
+                <li>Profitez de votre réduction de 30% !</li>
+            </ol>
+        </div>
+
+        <p>Le manuel complet vous donnera accès à :</p>
+        <ul>
+            <li>18 stratégies relationnelles détaillées</li>
+            <li>Guide complet de transition EHPAD</li>
+            <li>Techniques de respiration et auto-soin</li>
+            <li>Fiches pratiques téléchargeables</li>
+            <li>Ressources et contacts utiles</li>
+        </ul>
+
+        <p>Encore une fois, félicitations pour votre parcours exemplaire. Vous êtes maintenant mieux équipé(e) pour accompagner votre proche avec sérénité et bienveillance.</p>
+
+        <p>Bien à vous,<br>
+        L'équipe du Manuel d'Accompagnement Familiale</p>
+
+        <div class="footer">
+            <p><small>Ce code promo est personnel et non transférable. Il expire le {{expirationDate}} à minuit.</small></p>
+        </div>
+    </div>
+</body>
+</html>
+

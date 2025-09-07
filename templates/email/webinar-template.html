@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription confirmée - Webinaire exclusif</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: #2c5aa0;
+            margin-bottom: 10px;
+        }
+        .webinar-box {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .webinar-details {
+            background: rgba(255,255,255,0.2);
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .highlight {
+            background-color: #e8f4f8;
+            padding: 15px;
+            border-left: 4px solid #2c5aa0;
+            margin: 20px 0;
+        }
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 14px;
+            color: #666;
+        }
+        .button {
+            display: inline-block;
+            background-color: #2c5aa0;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📅 Inscription confirmée !</h1>
+            <p>Webinaire exclusif pour les aidants accomplis</p>
+        </div>
+
+        <p>Cher(e) {{displayName}},</p>
+
+        <p>Félicitations ! En complétant votre parcours d'apprentissage, vous avez automatiquement été inscrit(e) à notre webinaire exclusif réservé aux aidants qui ont terminé l'intégralité du programme.</p>
+
+        <div class="webinar-box">
+            <h2>🎯 Webinaire Exclusif</h2>
+            <h3>"Aller plus loin dans l'accompagnement : techniques avancées et retours d'expérience"</h3>
+            
+            <div class="webinar-details">
+                <p><strong>📅 Date :</strong> {{webinarDate}}</p>
+                <p><strong>🕐 Heure :</strong> {{webinarTime}}</p>
+                <p><strong>⏱️ Durée :</strong> 90 minutes</p>
+                <p><strong>👥 Format :</strong> Visioconférence interactive</p>
+            </div>
+        </div>
+
+        <div class="highlight">
+            <h3>🎯 Au programme :</h3>
+            <ul>
+                <li><strong>Techniques avancées</strong> : Approfondissement des 18 stratégies relationnelles</li>
+                <li><strong>Cas pratiques</strong> : Analyse de situations complexes avec des experts</li>
+                <li><strong>Témoignages</strong> : Retours d'expérience d'autres aidants</li>
+                <li><strong>Questions/Réponses</strong> : Session interactive avec nos spécialistes</li>
+                <li><strong>Ressources bonus</strong> : Documents exclusifs à télécharger</li>
+            </ul>
+        </div>
+
+        <p><strong>Animé par :</strong></p>
+        <ul>
+            <li>Emile PENOUCOS - Professeur d'APA</li>
+            <li>Thomas PETIT - Psychomotricien et formateur</li>
+            <li>Noëmie VELLUT - Neuropsychologue</li>
+        </ul>
+
+        <div style="text-align: center; margin: 30px 0;">
+            <a href="{{webinarLink}}" class="button">🔗 Accéder au webinaire</a>
+        </div>
+
+        <div class="highlight">
+            <h3>📝 Informations importantes :</h3>
+            <ul>
+                <li>Le lien de connexion sera activé 15 minutes avant le début</li>
+                <li>Une notification vous sera envoyée 24h et 1h avant le webinaire</li>
+                <li>L'enregistrement sera disponible pendant 30 jours après l'événement</li>
+                <li>Préparez vos questions à l'avance pour la session interactive</li>
+            </ul>
+        </div>
+
+        <p>Ce webinaire est notre façon de vous remercier pour votre engagement exceptionnel dans votre parcours d'aidant. Votre présence enrichira les échanges et profitera à toute la communauté.</p>
+
+        <p>À très bientôt,<br>
+        L'équipe du Manuel d'Accompagnement Familiale</p>
+
+        <div class="footer">
+            <p><small>Si vous ne pouvez pas assister au webinaire en direct, l'enregistrement vous sera envoyé automatiquement.</small></p>
+            <p><small>Pour toute question : contact@manuel-accompagnement.fr</small></p>
+        </div>
+    </div>
+</body>
+</html>
+

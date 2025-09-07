@@ -1,0 +1,43 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Users can only read/write their own user document
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // Users can only read/write their own attempts
+    match /attempts/{userId}/{attemptId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // Users can only read/write their own rewards
+    match /rewards/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // Users can only read/write their own webinar RSVP
+    match /webinar_rsvp/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // Lessons are public read-only
+    match /lessons/{lessonId} {
+      allow read: if true;
+      allow write: if false;
+    }
+    
+    // Quiz items are public read-only
+    match /quizItems/{quizItemId} {
+      allow read: if true;
+      allow write: if false;
+    }
+    
+    // Badges are public read-only
+    match /badges/{badgeId} {
+      allow read: if true;
+      allow write: if false;
+    }
+  }
+}
+
